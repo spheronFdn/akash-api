@@ -15,11 +15,15 @@ type ResourcesMetric struct {
 }
 
 type NodeMetrics struct {
-	Name        string          `json:"name"`
-	Allocatable ResourcesMetric `json:"allocatable"`
-	Available   ResourcesMetric `json:"available"`
-	Bandwidth   string          `json:"bandwidth,omitempty"`
-	Version     string          `json:"version,omitempty"`
+	Name                string          `json:"name"`
+	Allocatable         ResourcesMetric `json:"allocatable"`
+	Available           ResourcesMetric `json:"available"`
+	Bandwidth           string          `json:"bandwidth,omitempty"`
+	Version             string          `json:"version,omitempty"`
+	Os                  string          `json:"os,omitempty"`
+	Arch                string          `json:"arch,omitempty"`
+	CudaVersion         string          `json:"cuda_version,omitempty"`
+	NvidiaDriverVersion string          `json:"nvidia_driver_version,omitempty"`
 }
 
 type Metrics struct {

@@ -10,6 +10,10 @@ func (s *NodeResources) Dup() NodeResources {
 		VolumesMounted:   s.VolumesMounted.Dup(),
 		Version:          s.Version,
 		Bandwidth:        s.Bandwidth,
+		Os:               s.Os,
+		Arch:             s.Arch,
+		CudaVersion:      s.CudaVersion,
+		NvidiaDriverVersion: s.NvidiaDriverVersion,
 	}
 
 	return res
