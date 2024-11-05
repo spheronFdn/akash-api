@@ -863,6 +863,8 @@
  | `name` | [string](#string) |  |  |
  | `resources` | [NodeResources](#akash.inventory.v1.NodeResources) |  |  |
  | `capabilities` | [NodeCapabilities](#akash.inventory.v1.NodeCapabilities) |  |  |
+ | `cuda_version` | [string](#string) |  |  |
+ | `nvidia_driver_version` | [string](#string) |  |  |
  
  
 
