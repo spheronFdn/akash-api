@@ -26,6 +26,8 @@ func (nd *Node) Dup() Node {
 		Name:         nd.Name,
 		Resources:    nd.Resources.Dup(),
 		Capabilities: nd.Capabilities.Dup(),
+		CudaVersion:  nd.CudaVersion,
+		NvidiaDriverVersion: nd.NvidiaDriverVersion,
 	}
 
 	return res

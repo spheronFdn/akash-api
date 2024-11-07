@@ -36,4 +36,18 @@ message Node {
     (gogoproto.jsontag)      = "capabilities",
     (gogoproto.moretags)     = "yaml:\"capabilities\""
   ];
+
+  string cuda_version = 4 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "CudaVersion",
+    (gogoproto.jsontag)      = "cuda_version",
+    (gogoproto.moretags)     = "yaml:\"cuda_version\""
+  ];
+
+  string nvidia_driver_version = 5 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "NvidiaDriverVersion",
+    (gogoproto.jsontag)      = "nvidia_driver_version",
+    (gogoproto.moretags)     = "yaml:\"nvidia_driver_version\""
+  ];
 }
