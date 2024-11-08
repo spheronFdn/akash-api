@@ -965,7 +965,7 @@
  | `modelid` | [string](#string) |  |  |
  | `interface` | [string](#string) |  |  |
  | `memory_size` | [string](#string) |  |  |
- | `vram_available_percentage` | [string](#string) |  |  |
+ | `vram_available_percentage` | [int64](#int64) |  |  |
  
  
 

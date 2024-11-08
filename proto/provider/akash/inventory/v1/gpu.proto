@@ -41,7 +41,7 @@ message GPUInfo {
     (gogoproto.jsontag)      = "memory_size",
     (gogoproto.moretags)     = "yaml:\"memory_size\""
   ];
-  string vram_available_percentage = 7 [
+  int64 vram_available_percentage = 7 [
     (gogoproto.customname)   = "VRAMAvailablePercentage",
     (gogoproto.jsontag)      = "vram_available_percentage",
     (gogoproto.moretags)     = "yaml:\"vram_available_percentage\""
