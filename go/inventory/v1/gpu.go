@@ -25,12 +25,13 @@ func (r *GPU) Dup() GPU {
 
 func (s *GPUInfo) Dup() GPUInfo {
 	res := GPUInfo{
-		Vendor:     s.Vendor,
-		VendorID:   s.VendorID,
-		Name:       s.Name,
-		ModelID:    s.ModelID,
-		Interface:  s.Interface,
-		MemorySize: s.MemorySize,
+		Vendor:               s.Vendor,
+		VendorID:             s.VendorID,
+		Name:                 s.Name,
+		ModelID:              s.ModelID,
+		Interface:            s.Interface,
+		MemorySize:           s.MemorySize,
+		VRAMAvailablePercentage: s.VRAMAvailablePercentage,
 	}
 
 	return res
@@ -45,11 +46,12 @@ func (s GPUInfoS) Dup() GPUInfoS {
 
 	for _, n := range s {
 		res = append(res, GPUInfo{
-			Vendor:     n.Vendor,
-			Name:       n.Name,
-			ModelID:    n.ModelID,
-			Interface:  n.Interface,
-			MemorySize: n.MemorySize,
+			Vendor:               n.Vendor,
+			Name:                 n.Name,
+			ModelID:              n.ModelID,
+			Interface:            n.Interface,
+			MemorySize:           n.MemorySize,
+			VRAMAvailablePercentage: n.VRAMAvailablePercentage,
 		})
 	}
 
