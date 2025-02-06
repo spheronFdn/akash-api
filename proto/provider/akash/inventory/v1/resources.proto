@@ -66,25 +66,31 @@ message NodeResources {
     (gogoproto.jsontag)      = "bandwidth",
     (gogoproto.moretags)     = "yaml:\"bandwidth\""
   ];
-  string os = 9 [
+  string numeric_bandwidth = 9 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "Bandwidth",
+    (gogoproto.jsontag)      = "bandwidth",
+    (gogoproto.moretags)     = "yaml:\"bandwidth\""
+  ];
+  string os = 10 [
     (gogoproto.nullable)     = true,  
     (gogoproto.customname)   = "Os",
     (gogoproto.jsontag)      = "os",
     (gogoproto.moretags)     = "yaml:\"os\""
   ];
-  string arch = 10 [
+  string arch = 11 [
     (gogoproto.nullable)     = true,  
     (gogoproto.customname)   = "Arch",
     (gogoproto.jsontag)      = "arch",
     (gogoproto.moretags)     = "yaml:\"arch\""
   ];
-  string cuda_version = 11 [
+  string cuda_version = 12 [
     (gogoproto.nullable)     = true,  
     (gogoproto.customname)   = "CudaVersion",
     (gogoproto.jsontag)      = "cuda_version",
     (gogoproto.moretags)     = "yaml:\"cuda_version\""
   ];
-  string nvidia_driver_version = 12 [
+  string nvidia_driver_version = 13 [
     (gogoproto.nullable)     = true,  
     (gogoproto.customname)   = "NvidiaDriverVersion",
     (gogoproto.jsontag)      = "nvidia_driver_version",

@@ -826,6 +826,7 @@
  | `volumes_mounted` | [ResourcePair](#akash.inventory.v1.ResourcePair) |  |  |
  | `version` | [string](#string) |  |  |
  | `bandwidth` | [string](#string) |  |  |
+ | `numeric_bandwidth` | [string](#string) |  |  |
  | `os` | [string](#string) |  |  |
  | `arch` | [string](#string) |  |  |
  | `cuda_version` | [string](#string) |  |  |
