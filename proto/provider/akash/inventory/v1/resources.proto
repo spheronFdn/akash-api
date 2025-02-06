@@ -66,11 +66,11 @@ message NodeResources {
     (gogoproto.jsontag)      = "bandwidth",
     (gogoproto.moretags)     = "yaml:\"bandwidth\""
   ];
-  string numeric_bandwidth = 9 [
+  double numeric_bandwidth = 9 [
     (gogoproto.nullable)     = true,
-    (gogoproto.customname)   = "Bandwidth",
-    (gogoproto.jsontag)      = "bandwidth",
-    (gogoproto.moretags)     = "yaml:\"bandwidth\""
+    (gogoproto.customname)   = "NumericBandwidth",
+    (gogoproto.jsontag)      = "numeric_bandwidth",
+    (gogoproto.moretags)     = "yaml:\"numeric_bandwidth\""
   ];
   string os = 10 [
     (gogoproto.nullable)     = true,  
