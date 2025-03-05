@@ -38,6 +38,7 @@ type MetricTotal struct {
 	Memory           uint64           `json:"memory"`
 	StorageEphemeral uint64           `json:"storage_ephemeral"`
 	Storage          map[string]int64 `json:"storage,omitempty"`
+	NodeId           string           `json:"nodeId"`
 }
 
 type StorageStatus struct {
