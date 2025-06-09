@@ -24,6 +24,13 @@ type NodeMetrics struct {
 	Arch                string          `json:"arch,omitempty"`
 	CudaVersion         string          `json:"cuda_version,omitempty"`
 	NvidiaDriverVersion string          `json:"nvidia_driver_version,omitempty"`
+	BlacklistInfo       BlacklistInfo   `json:"blacklist,omitempty"`
+}
+
+type BlacklistInfo struct {
+	SecurityViolationsCount         int  `json:"security_violations_count"`
+	ResourceRequirementsUnfulfilled bool `json:"resource_requirements_unfulfilled"`
+	DeploymentsClosedWhileOffline   int  `json:"deployments_closed_while_offline"`
 }
 
 type Metrics struct {
