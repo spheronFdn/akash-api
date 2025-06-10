@@ -3,6 +3,7 @@ package akash.inventory.v1;
 
 import "gogoproto/gogo.proto";
 import "akash/inventory/v1/resources.proto";
+import "akash/inventory/v1/blacklistinfo.proto";
 
 option go_package = "github.com/spheronFdn/akash-api-fork/go/inventory/v1";
 
@@ -49,5 +50,12 @@ message Node {
     (gogoproto.customname)   = "NvidiaDriverVersion",
     (gogoproto.jsontag)      = "nvidia_driver_version",
     (gogoproto.moretags)     = "yaml:\"nvidia_driver_version\""
+  ];
+
+   BlacklistInfo blacklist_info = 6 [
+    (gogoproto.nullable)     = false,
+    (gogoproto.customname)   = "BlacklistInfo",
+    (gogoproto.jsontag)      = "blacklist_info",
+    (gogoproto.moretags)     = "yaml:\"blacklist_info\""
   ];
 }

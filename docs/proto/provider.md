@@ -901,6 +901,7 @@
  | `capabilities` | [NodeCapabilities](#akash.inventory.v1.NodeCapabilities) |  |  |
  | `cuda_version` | [string](#string) |  |  |
  | `nvidia_driver_version` | [string](#string) |  |  |
+ | `blacklist_info` | [BlacklistInfo](#akash.inventory.v1.BlacklistInfo) |  |  |
  
  
 
