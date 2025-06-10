@@ -27,12 +27,6 @@ type NodeMetrics struct {
 	BlacklistInfo       BlacklistInfo   `json:"blacklist,omitempty"`
 }
 
-type BlacklistInfo struct {
-	SecurityViolationsCount         int  `json:"security_violations_count"`
-	ResourceRequirementsUnfulfilled bool `json:"resource_requirements_unfulfilled"`
-	DeploymentsClosedWhileOffline   int  `json:"deployments_closed_while_offline"`
-}
-
 type Metrics struct {
 	Nodes            []NodeMetrics `json:"nodes"`
 	TotalAllocatable MetricTotal   `json:"total_allocatable"`

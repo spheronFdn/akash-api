@@ -48,6 +48,9 @@
  - [akash/provider/v1/service.proto](#akash/provider/v1/service.proto)
      - [ProviderRPC](#akash.provider.v1.ProviderRPC)
    
+ - [akash/inventory/v1/blacklistinfo.proto](#akash/inventory/v1/blacklistinfo.proto)
+     - [BlacklistInfo](#akash.inventory.v1.BlacklistInfo)
+   
  - [akash/inventory/v1/memory.proto](#akash/inventory/v1/memory.proto)
      - [Memory](#akash.inventory.v1.Memory)
      - [MemoryInfo](#akash.inventory.v1.MemoryInfo)
@@ -667,6 +670,39 @@
  | `GetStatus` | [.google.protobuf.Empty](#google.protobuf.Empty) | [Status](#akash.provider.v1.Status) | GetStatus defines a method to query provider state buf:lint:ignore RPC_REQUEST_RESPONSE_UNIQUE buf:lint:ignore RPC_RESPONSE_STANDARD_NAME | GET|/v1/status|
  | `StreamStatus` | [.google.protobuf.Empty](#google.protobuf.Empty) | [Status](#akash.provider.v1.Status) stream | Status defines a method to stream provider state buf:lint:ignore RPC_REQUEST_RESPONSE_UNIQUE buf:lint:ignore RPC_RESPONSE_STANDARD_NAME | |
  
+  <!-- end services -->
+
+ 
+ 
+ <a name="akash/inventory/v1/blacklistinfo.proto"></a>
+ <p align="right"><a href="#top">Top</a></p>
+
+ ## akash/inventory/v1/blacklistinfo.proto
+ 
+
+ 
+ <a name="akash.inventory.v1.BlacklistInfo"></a>
+
+ ### BlacklistInfo
+ BlacklistInfo reports reasons a node might be blacklisted from the network
+
+ 
+ | Field | Type | Label | Description |
+ | ----- | ---- | ----- | ----------- |
+ | `security_violations_count` | [int32](#int32) |  |  |
+ | `resource_requirements_unfulfilled` | [bool](#bool) |  |  |
+ | `deployments_closed_while_offline` | [int32](#int32) |  |  |
+ 
+ 
+
+ 
+
+  <!-- end messages -->
+
+  <!-- end enums -->
+
+  <!-- end HasExtensions -->
+
   <!-- end services -->
 
  
