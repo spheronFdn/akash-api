@@ -23,11 +23,12 @@ func (nd Nodes) Dup() Nodes {
 
 func (nd *Node) Dup() Node {
 	res := Node{
-		Name:         nd.Name,
-		Resources:    nd.Resources.Dup(),
-		Capabilities: nd.Capabilities.Dup(),
-		CudaVersion:  nd.CudaVersion,
+		Name:                nd.Name,
+		Resources:           nd.Resources.Dup(),
+		Capabilities:        nd.Capabilities.Dup(),
+		CudaVersion:         nd.CudaVersion,
 		NvidiaDriverVersion: nd.NvidiaDriverVersion,
+		BlacklistInfo:       nd.BlacklistInfo,
 	}
 
 	return res
