@@ -1,0 +1,28 @@
+syntax = "proto3";
+
+package akash.inventory.v1;
+
+import "gogoproto/gogo.proto";
+
+option go_package = "github.com/spheronFdn/akash-api-fork/go/inventory/v1";
+
+// BlacklistInfo reports reasons a node might be blacklisted from the network
+message BlacklistInfo {
+  int32 security_violations_count = 1 [
+    (gogoproto.customname) = "SecurityViolationsCount",
+    (gogoproto.jsontag)    = "security_violations_count",
+    (gogoproto.moretags)   = "yaml:\"security_violations_count\""
+  ];
+
+  bool resource_requirements_unfulfilled = 2 [
+    (gogoproto.customname) = "ResourceRequirementsUnfulfilled",
+    (gogoproto.jsontag)    = "resource_requirements_unfulfilled",
+    (gogoproto.moretags)   = "yaml:\"resource_requirements_unfulfilled\""
+  ];
+
+  int32 deployments_closed_while_offline = 3 [
+    (gogoproto.customname) = "DeploymentsClosedWhileOffline",
+    (gogoproto.jsontag)    = "deployments_closed_while_offline",
+    (gogoproto.moretags)   = "yaml:\"deployments_closed_while_offline\""
+  ];
+}

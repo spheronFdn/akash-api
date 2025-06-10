@@ -24,6 +24,7 @@ type NodeMetrics struct {
 	Arch                string          `json:"arch,omitempty"`
 	CudaVersion         string          `json:"cuda_version,omitempty"`
 	NvidiaDriverVersion string          `json:"nvidia_driver_version,omitempty"`
+	BlacklistInfo       BlacklistInfo   `json:"blacklist_info,omitempty"`
 }
 
 type Metrics struct {
