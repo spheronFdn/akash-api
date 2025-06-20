@@ -58,4 +58,11 @@ message Node {
     (gogoproto.jsontag)      = "blacklist_info",
     (gogoproto.moretags)     = "yaml:\"blacklist_info\""
   ];
+
+  string fizz_id = 7 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "FizzId",
+    (gogoproto.jsontag)      = "fizz_id",
+    (gogoproto.moretags)     = "yaml:\"fizz_id\""
+  ];
 }

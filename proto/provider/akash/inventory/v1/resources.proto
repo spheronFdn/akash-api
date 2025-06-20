@@ -90,4 +90,22 @@ message NodeResources {
     (gogoproto.jsontag)      = "nvidia_driver_version",
     (gogoproto.moretags)     = "yaml:\"nvidia_driver_version\""
   ];
+  string upload_speed = 13 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "UploadSpeed",
+    (gogoproto.jsontag)      = "upload_speed",
+    (gogoproto.moretags)     = "yaml:\"upload_speed\""
+  ];
+  string download_speed = 14 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "DownloadSpeed",
+    (gogoproto.jsontag)      = "download_speed",
+    (gogoproto.moretags)     = "yaml:\"download_speed\""
+  ];
+  string region = 15 [
+    (gogoproto.nullable)     = true,
+    (gogoproto.customname)   = "Region",
+    (gogoproto.jsontag)      = "region",
+    (gogoproto.moretags)     = "yaml:\"region\""
+  ];
 }

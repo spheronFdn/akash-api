@@ -866,6 +866,9 @@
  | `arch` | [string](#string) |  |  |
  | `cuda_version` | [string](#string) |  |  |
  | `nvidia_driver_version` | [string](#string) |  |  |
+ | `upload_speed` | [string](#string) |  |  |
+ | `download_speed` | [string](#string) |  |  |
+ | `region` | [string](#string) |  |  |
  
  
 
@@ -902,6 +905,7 @@
  | `cuda_version` | [string](#string) |  |  |
  | `nvidia_driver_version` | [string](#string) |  |  |
  | `blacklist_info` | [BlacklistInfo](#akash.inventory.v1.BlacklistInfo) |  |  |
+ | `fizz_id` | [string](#string) |  |  |
  
  
 
