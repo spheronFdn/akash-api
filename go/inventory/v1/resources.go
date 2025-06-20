@@ -14,6 +14,9 @@ func (s *NodeResources) Dup() NodeResources {
 		Arch:             s.Arch,
 		CudaVersion:      s.CudaVersion,
 		NvidiaDriverVersion: s.NvidiaDriverVersion,
+		UploadSpeed:         s.UploadSpeed,
+		DownloadSpeed:       s.DownloadSpeed,
+		Region:              s.Region,
 	}
 
 	return res

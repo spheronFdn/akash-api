@@ -29,6 +29,7 @@ func (nd *Node) Dup() Node {
 		CudaVersion:         nd.CudaVersion,
 		NvidiaDriverVersion: nd.NvidiaDriverVersion,
 		BlacklistInfo:       nd.BlacklistInfo,
+		FizzId:              nd.FizzId,
 	}
 
 	return res

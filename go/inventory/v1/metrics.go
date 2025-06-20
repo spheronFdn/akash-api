@@ -19,12 +19,16 @@ type NodeMetrics struct {
 	Allocatable         ResourcesMetric `json:"allocatable"`
 	Available           ResourcesMetric `json:"available"`
 	Bandwidth           string          `json:"bandwidth,omitempty"`
+	UploadSpeed         string          `json:"upload_speed,omitempty"`
+	DownloadSpeed       string          `json:"download_speed,omitempty"`
+	Region              string          `json:"region,omitempty"`
 	Version             string          `json:"version,omitempty"`
 	Os                  string          `json:"os,omitempty"`
 	Arch                string          `json:"arch,omitempty"`
 	CudaVersion         string          `json:"cuda_version,omitempty"`
 	NvidiaDriverVersion string          `json:"nvidia_driver_version,omitempty"`
 	BlacklistInfo       BlacklistInfo   `json:"blacklist_info,omitempty"`
+	FizzId              string          `json:"fizz_id,omitempty"`
 }
 
 type Metrics struct {
