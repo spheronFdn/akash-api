@@ -12,6 +12,7 @@ type ResourcesMetric struct {
 	GPU_infos        GPUInfoS `json:"gpu_infos"`
 	Memory           uint64   `json:"memory"`
 	StorageEphemeral uint64   `json:"storage_ephemeral"`
+	CPUModel         string   `json:"cpu_model,omitempty"`
 }
 
 type NodeMetrics struct {
